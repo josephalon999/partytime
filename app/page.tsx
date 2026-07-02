@@ -62,7 +62,7 @@ const tracks = [
       "גישה לכל החיים",
     ],
     cta: "מתחיל מהבית",
-    paymentUrl: "https://secure.cardcom.solutions/EA/EA5/MACstz7RFkqVw86NjcDQg/PaymentSP",
+    paymentUrl: "/checkout/digital",
     gradient: "from-blue-900/40 to-violet-900/30",
     border: "border-blue-500/20",
     glow: "rgba(59,130,246,0.15)",
@@ -83,7 +83,7 @@ const tracks = [
       "בסיס חזק להמשך לבד",
     ],
     cta: "אני רוצה להתחיל",
-    paymentUrl: "https://secure.cardcom.solutions/EA/EA5/lQd4fxNxk6jfWysNjI7w/PaymentSP",
+    paymentUrl: "/checkout/plus",
     gradient: "from-teal-900/40 to-cyan-900/30",
     border: "border-teal-500/20",
     glow: "rgba(20,184,166,0.15)",
@@ -104,7 +104,7 @@ const tracks = [
       "גישה לקורס לכל החיים",
     ],
     cta: "אני רוצה להשתחרר",
-    paymentUrl: "https://secure.cardcom.solutions/EA/EA5/U36YwhDXm0qyujHP73QRuA/PaymentSP",
+    paymentUrl: "/checkout/shihrur",
     gradient: "from-violet-900/40 to-purple-900/30",
     border: "border-violet-500/30",
     glow: "rgba(124,58,237,0.2)",
@@ -129,7 +129,7 @@ const tracks = [
       "קורס דיגיטלי מלא: טרנסים, מזרחית, 80's, ישראלית, פופ, סלסה, סלואו ועוד",
     ],
     cta: "אני רוצה גם להכיר",
-    paymentUrl: "https://secure.cardcom.solutions/EA/EA5/rFHwiE1JkUKa3C1h5frsgA/PaymentSP",
+    paymentUrl: "/checkout/hayetzia",
     gradient: "from-pink-900/40 to-rose-900/30",
     border: "border-pink-500/30",
     glow: "rgba(236,72,153,0.2)",
@@ -1102,8 +1102,6 @@ export default function HomePage() {
 
                   <a
                     href={track.paymentUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="block text-center py-3.5 px-5 rounded-2xl font-bold text-base text-white transition-all duration-300 hover:scale-105 hover:shadow-xl mb-3"
                     style={{
                       background: "linear-gradient(135deg, #7c3aed, #ec4899)",

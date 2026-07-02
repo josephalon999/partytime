@@ -8,13 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^11.15.0",
     "next": "^15.0.0",
+    "nodemailer": "^9.0.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "framer-motion": "^11.15.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^8.0.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",
