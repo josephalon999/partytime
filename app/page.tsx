@@ -667,25 +667,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIFFERENCE VIDEO ──────────────────────────────────────────────── */}
-      <section className="py-14 px-6">
-        <div className="max-w-3xl mx-auto">
-          <FadeIn className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold">
-              ההבדל בין גבר{" "}
-              <span style={{ background: "linear-gradient(90deg,#a855f7,#ec4899)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                משוחרר
-              </span>{" "}
-              לגבר קפוא
-            </h2>
-            <p className="text-gray-500 text-base mt-2">דקה וחצי שיכולות לשנות לך את הערב</p>
-          </FadeIn>
-          <FadeIn delay={0.15}>
-            <YouTubeCard id="MRmz2f239fE" short />
-          </FadeIn>
-        </div>
-      </section>
-
       {/* ── WHO IS THIS FOR ───────────────────────────────────────────────── */}
       <section className="py-28 px-6">
         <div className="max-w-3xl mx-auto">
@@ -799,6 +780,25 @@ export default function HomePage() {
               </p>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* ── DIFFERENCE VIDEO ──────────────────────────────────────────────── */}
+      <section className="py-14 px-6">
+        <div className="max-w-3xl mx-auto">
+          <FadeIn className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold">
+              ההבדל בין גבר{" "}
+              <span style={{ background: "linear-gradient(90deg,#a855f7,#ec4899)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                משוחרר
+              </span>{" "}
+              לגבר קפוא
+            </h2>
+            <p className="text-gray-500 text-base mt-2">דקה וחצי שיכולות לשנות לך את הערב</p>
+          </FadeIn>
+          <FadeIn delay={0.15}>
+            <YouTubeCard id="MRmz2f239fE" short />
+          </FadeIn>
         </div>
       </section>
 
