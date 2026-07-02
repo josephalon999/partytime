@@ -538,7 +538,7 @@ export default function HomePage() {
               href="#tracks"
               className="px-9 py-4 rounded-full font-semibold text-xl text-white border border-violet-500/40 bg-white/[0.04] hover:bg-white/[0.08] transition-all duration-300"
             >
-              ✨ אני רוצה להרגיש חלק
+              ✨ נמאס לי לעמוד בצד
             </a>
           </motion.div>
 
