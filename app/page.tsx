@@ -1362,11 +1362,12 @@ export default function HomePage() {
               "מעולם לא הצלחתי לרקוד — עד שרקדתי 6 שעות ברצף"
             </p>
           </FadeIn>
-          <div className="grid grid-cols-3 gap-4 items-start">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 items-start">
             {[
               { id: "zKyxFwfzt0c" },
               { id: "MOgEm5z2Poo" },
               { id: "tg-TqFbEXKM" },
+              { id: "2O8CYvZKvw8" },
             ].map(({ id }, i) => (
               <FadeIn key={id} delay={i * 0.1}>
                 <YouTubeCard id={id} short label="עדות" />
