@@ -9,7 +9,7 @@ const RESPONDER_USER_TOKEN    = process.env.RESPONDER_USER_TOKEN    || "";
 const RESPONDER_LIST_ID       = process.env.RESPONDER_LIST_ID       || "";
 
 async function getResponderToken(): Promise<string> {
-  const res = await fetch("https://graph.responder.live/oauth/token", {
+  const res = await fetch("https://graph.responder.live/v2/oauth/token", {
     method: "POST",
     headers: { "Content-Type": "application/json", "Accept": "application/json" },
     body: JSON.stringify({
@@ -22,7 +22,8 @@ async function getResponderToken(): Promise<string> {
   });
   if (!res.ok) throw new Error(`Responder token error: ${res.status}`);
   const data = await res.json();
-  return data.access_token;
+  // Responder מחזיר את הטוקן בשדה "token" (לא "access_token")
+  return data.token;
 }
 
 async function addToResponder(contact: {
